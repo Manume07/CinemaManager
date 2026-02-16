@@ -1,0 +1,41 @@
+﻿@model List<CineManagerWeb.Models.Sala>
+
+<h2 class="mt-4">Sale Cinema Disponibili</h2>
+
+<table class="table table-striped mt-3">
+    <thead class="table-dark">
+        <tr>
+            <!--NORMALE-->
+            <th>ID Sala</th>
+            <th>Film</th>
+            <th>Disponibilità</th>
+            <th>Posti liberi</th>
+            <th> Posti occupati</th>
+            <th>Azione</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var s in Model)
+        {
+            <tr>
+                <td>@s.Id</td>
+                <td>@s.Film</td>
+                <td>@s.Disponibilita posti</td>
+                <td>@s.PostiLiberi</td>
+                <td>@s.PostiOccupati</td>
+                <td>
+                    @if (s.Disponibilita > 0)
+                    {
+                        <a href="/Cinema/Prenota?id=@s.Id" class="btn btn-primary">Prenota 1 Posto</a>
+                    }
+                    else
+                    {
+                        <span class="badge bg-danger">Esaurito</span>
+                    }
+                    
+                </td>
+            </tr>
+          }
+       
+    </tbody>
+</table>

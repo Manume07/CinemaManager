@@ -1,0 +1,23 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using CineManagerWeb.Models;
+
+public class AdminController : Controller
+{
+    // La lista è statica per non perdere i dati tra i click
+    private static List<Sala> _sale = new List<Sala> {
+        new Sala { Id = 1, Film = "Il Glossario", Disponibilita = 20},
+        new Sala { Id = 2, Film = "C# Revenge", Disponibilita = 5 }
+    };
+
+    public IActionResult Index()
+    {
+        return View(_sale); // Invia la lista alla pagina HTML
+    }
+
+    public IActionResult Prenota(int id)
+    {
+        var sala = _sale.Find(s => s.Id == id);
+        if (sala != null) sala.OccupaPosto();
+        return View("/Views/Cinema/Index.cshtml", _sale);
+    }
+}
