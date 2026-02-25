@@ -1,0 +1,120 @@
+﻿@model List<CineManagerWeb.Models.Sala>
+
+<h2 class="mt-4">Sale Cinema Disponibili</h2>
+
+<table class="table table-striped mt-3">
+    <thead class="table-dark">
+        <tr>
+            <th>Film</th>
+            <th>Sala</th>
+            <th>Disponibilità</th>
+            <th>Posti Occupati</th>
+            <th>Posti Totali</th>
+            <th>Azione</th>
+            <th>Disdire</th>
+            <th> Aumenta capienza sala</th>
+            <th> Incasso sala</th>
+            <th> Omaggi</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var s in Model)
+        {
+            <tr>
+                <td>@s.Film</td>
+                <td>@s.Id</td>
+                <td>@s.PostiLiberi posti</td>
+                <td>@s.PostiOccupati posti</td>
+                <td>@s.Posti posti</td>
+                <td>
+                    @if (s.PostiLiberi > 0)
+                    {
+                        <a href="/Cinema/Prenota?id=@s.Id" class="btn btn-primary">Prenota 1 Posto</a>
+                    }
+                    else
+                    {
+                        <span class="badge bg-danger">Esaurito</span>
+                    }
+                </td>
+                <td>
+                    @{
+                        // Legge il cookie "role" (sostituire "role" col nome reale del cookie se diverso)
+                        var roleCookie = Context.Request.Cookies["UserSession"];
+                        if (!string.IsNullOrEmpty(roleCookie) && string.Equals(roleCookie, "administrator", System.StringComparison.OrdinalI  gnoreCase))
+                        {
+                            <!-- Utente amministratore: mostra il link per disdire o altra azione -->
+                            <a href="/Cinema/Disdici?id=@s.Id" class="btn btn-warning">Disdici</a>
+                        }
+
+                        else
+                        {
+                            <span class="badge bg-danger">Nessun permesso</span>
+                        }
+                    }
+                </td>
+
+                <td>
+                    @{
+                        // Legge il cookie "role" (sostituire "role" col nome reale del cookie se diverso)
+                        
+                        if (!string.IsNullOrEmpty(roleCookie) && string.Equals(roleCookie, "administrator", System.StringComparison.OrdinalIgnoreCase))
+                        {
+                            
+                            <!-- Utente amministratore: mostra il link per disdire o altra azione -->
+                            <form method="get" asp-controller="Cinema" asp-action="CambiaCapienza" class="d-flex">
+                                <input type="hidden" name="id" value="@s.Id" />
+                                <input type="number" name="nuovacapienza" min="1" placeholder="Nuova capienza" required />
+                                <button type="submit" class="btn btn-warning">Cambia</button>
+                            </form>
+                        }
+                        else
+                        {
+                            <span class="badge bg-danger">Nessun permesso</span> 
+                        }
+                    }
+                </td>
+
+                <td>@s.IncassoSala</td>
+                <td>
+                    @{
+                        // Legge il cookie "role" (sostituire "role" col nome reale del cookie se diverso)
+
+                        if (!string.IsNullOrEmpty(roleCookie) && string.Equals(roleCookie, "administrator", System.StringComparison.OrdinalIgnoreCase))
+                        {
+                            <form method="get" asp-controller="Cinema" asp-action="OmaggioControllo" class="d-flex">
+                                <input type="hidden" name="id" value="@s.Id" />
+                                <input type="text" name="NuovoOmaggio" placeholder="Nuovo omaggio" required />
+                                <button type="submit" class="btn btn-warning">Applica</button>
+                            </form>
+                        }
+
+                    }
+                </td>
+               
+
+                
+            </tr>
+        }
+    </tbody>
+</table>
+
+<body>
+    <div class="container">
+        <form id="form-login" method="post" asp-controller="Cinema" asp-action="Login">
+            @Html.AntiForgeryToken()
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required />
+            <br />
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" minlength="8" required />
+            <br />
+
+            <button type="submit">Login</button>
+        </form>
+
+        
+       
+    </div>
+</body>

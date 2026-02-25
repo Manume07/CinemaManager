@@ -1,0 +1,89 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\manuel.campana\\Desktop\\Cinema\\Esercitazione-C-CineManager-Web\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2E813766-0B0A-4B55-BF48-18AF22B45A5E}|CineManager\\CineManager.csproj|c:\\users\\manuel.campana\\desktop\\cinema\\esercitazione-c-cinemanager-web\\cinemanager\\controllers\\cinemacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E813766-0B0A-4B55-BF48-18AF22B45A5E}|CineManager\\CineManager.csproj|solutionrelative:cinemanager\\controllers\\cinemacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E813766-0B0A-4B55-BF48-18AF22B45A5E}|CineManager\\CineManager.csproj|c:\\users\\manuel.campana\\desktop\\cinema\\esercitazione-c-cinemanager-web\\cinemanager\\models\\sala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E813766-0B0A-4B55-BF48-18AF22B45A5E}|CineManager\\CineManager.csproj|solutionrelative:cinemanager\\models\\sala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E813766-0B0A-4B55-BF48-18AF22B45A5E}|CineManager\\CineManager.csproj|c:\\users\\manuel.campana\\desktop\\cinema\\esercitazione-c-cinemanager-web\\cinemanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E813766-0B0A-4B55-BF48-18AF22B45A5E}|CineManager\\CineManager.csproj|solutionrelative:cinemanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E813766-0B0A-4B55-BF48-18AF22B45A5E}|CineManager\\CineManager.csproj|c:\\users\\manuel.campana\\desktop\\cinema\\esercitazione-c-cinemanager-web\\cinemanager\\views\\cinema\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2E813766-0B0A-4B55-BF48-18AF22B45A5E}|CineManager\\CineManager.csproj|solutionrelative:cinemanager\\views\\cinema\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\manuel.campana\\Desktop\\Cinema\\Esercitazione-C-CineManager-Web\\CineManager\\Views\\Cinema\\Index.cshtml",
+              "RelativeDocumentMoniker": "CineManager\\Views\\Cinema\\Index.cshtml",
+              "ToolTip": "C:\\Users\\manuel.campana\\Desktop\\Cinema\\Esercitazione-C-CineManager-Web\\CineManager\\Views\\Cinema\\Index.cshtml",
+              "RelativeToolTip": "CineManager\\Views\\Cinema\\Index.cshtml",
+              "ViewState": "AgIAADUAAAAAAAAAAAAUwFoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-28T07:45:44.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CinemaController.cs",
+              "DocumentMoniker": "C:\\Users\\manuel.campana\\Desktop\\Cinema\\Esercitazione-C-CineManager-Web\\CineManager\\Controllers\\CinemaController.cs",
+              "RelativeDocumentMoniker": "CineManager\\Controllers\\CinemaController.cs",
+              "ToolTip": "C:\\Users\\manuel.campana\\Desktop\\Cinema\\Esercitazione-C-CineManager-Web\\CineManager\\Controllers\\CinemaController.cs",
+              "RelativeToolTip": "CineManager\\Controllers\\CinemaController.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAApwEMAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "OverriddenGroupName": "CineManager\\Controllers",
+              "WhenOpened": "2026-01-28T07:40:05.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\manuel.campana\\Desktop\\Cinema\\Esercitazione-C-CineManager-Web\\CineManager\\Program.cs",
+              "RelativeDocumentMoniker": "CineManager\\Program.cs",
+              "ToolTip": "C:\\Users\\manuel.campana\\Desktop\\Cinema\\Esercitazione-C-CineManager-Web\\CineManager\\Program.cs",
+              "RelativeToolTip": "CineManager\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T07:35:50.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Sala.cs",
+              "DocumentMoniker": "C:\\Users\\manuel.campana\\Desktop\\Cinema\\Esercitazione-C-CineManager-Web\\CineManager\\Models\\Sala.cs",
+              "RelativeDocumentMoniker": "CineManager\\Models\\Sala.cs",
+              "ToolTip": "C:\\Users\\manuel.campana\\Desktop\\Cinema\\Esercitazione-C-CineManager-Web\\CineManager\\Models\\Sala.cs",
+              "RelativeToolTip": "CineManager\\Models\\Sala.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAsAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T07:38:52.11Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
