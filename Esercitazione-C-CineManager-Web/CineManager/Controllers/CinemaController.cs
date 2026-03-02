@@ -67,16 +67,17 @@ public class CinemaController : Controller
         var sala = _sale.Find(s => s.Id == id);
         if (NuovoOmaggio == "V4CC4R1")
         {
-            if (sala != null && sala.PostiLiberi > 0)
+            if (sala.PostiLiberi > 0)
             {
                 sala.OccupaPosto();
-                sala.ScontoPercentuale = 90;
                 TempData["AlertMessage"] = "Omaggio riscattato! Posto occupato gratuitamente";
+                return RedirectToAction("Index");
 
             }
             else
             {
                 TempData["AlertMessage"] = "Mi dispiace, non ci sono posti liberi per l'omaggio";
+                return RedirectToAction("Index");
             }
         }
         else

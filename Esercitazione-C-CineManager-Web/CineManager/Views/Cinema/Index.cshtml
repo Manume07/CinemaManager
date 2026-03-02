@@ -40,7 +40,7 @@
                     @{
                         // Legge il cookie "role" (sostituire "role" col nome reale del cookie se diverso)
                         var roleCookie = Context.Request.Cookies["UserSession"];
-                        if (!string.IsNullOrEmpty(roleCookie) && string.Equals(roleCookie, "administrator", System.StringComparison.OrdinalI  gnoreCase))
+                        if (!string.IsNullOrEmpty(roleCookie) && string.Equals(roleCookie, "administrator", System.StringComparison.OrdinalIgnoreCase))
                         {
                             <!-- Utente amministratore: mostra il link per disdire o altra azione -->
                             <a href="/Cinema/Disdici?id=@s.Id" class="btn btn-warning">Disdici</a>
